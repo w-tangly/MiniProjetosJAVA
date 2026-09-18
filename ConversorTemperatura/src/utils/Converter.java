@@ -30,4 +30,12 @@ public class Converter {
         return fahrenheitToKelvin(celsiusToFahrenheit(c));
     }
 
+    public static double kelvinToFahrenheit(double k){
+        return celsiusToFahrenheit(kelvinToCelsius(k));
+    }
+
+    public static double fahrenheitToCelsius(double f){
+        return kelvinToCelsius(fahrenheitToKelvin(f));
+    }
+
 }
